@@ -6,12 +6,12 @@ let Obstacles = JSON.parse('[{"points":[{"x":0.3276250076293945,"y":0.3400073537
 
 
 function Parse(){
+    Paths.length = 0;
     for(let i in Obstacles){
         let p = new Path();
         p.Points = Obstacles[i].points.map(a=>{
-            a.x *= WinSize.Width;
-            a.y *= WinSize.Height;
-            return a;
+            return {x:a.x * WinSize.Width,
+            y:a.y * WinSize.Height};
         });
         Paths.push(p);
     }
@@ -20,10 +20,20 @@ function Parse(){
 
 //let BGImage;
 
+
+function windowResized(){
+    WinSize = {Width : Math.min(600,windowWidth),Height: Math.min(windowHeight,700)}
+
+    resizeCanvas(WinSize.Width,WinSize.Height);
+    Parse();
+}
+
+
+
 function setup(){
 
     //Cursor = loadImage('./bulb.png');
-    //WinSize = {Width : windowWidth,Height: windowHeight}
+    WinSize = {Width : Math.min(600,windowWidth),Height: Math.min(windowHeight,700)}
     createCanvas(WinSize.Width ,WinSize.Height);
     Parse();
     //BGImage = loadImage(`https://picsum.photos/${WinSize.Width}/${WinSize.Height}`);
