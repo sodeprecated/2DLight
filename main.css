@@ -12,11 +12,17 @@
 
 body{
     overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
 }
 
 canvas{
     border: solid 2px;
-    position: absolute;
+    position: relative;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
