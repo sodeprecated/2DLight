@@ -1,5 +1,5 @@
 # 2DLight
-A simple JS example of pretty *fast 2d light
+A simple JS example of *fast 2d light
 
 
 Visit https://caitan.me to see!
