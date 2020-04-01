@@ -48,14 +48,14 @@ function draw(){
     
 
     clear();
-    background(255,255,255);
+    background(0,0,0);
 
 
     for(let i in Paths){
         Paths[i].Draw();
     }
 
-    stroke(255,0,0);
+    stroke(255,255,255);
 
     
 
@@ -67,7 +67,7 @@ function draw(){
     let angle = toRadCoord(dx,dy); 
     let dist = getMinDist(new Ray(p,angle,cos(angle),sin(angle)));
     line(p.x,p.y,p.x+cos(angle)*dist,p.y-sin(angle)*dist);
-    fill(255,0,0);
+    fill(255,255,255);
     circle(p.x+cos(angle)*dist,p.y-sin(angle)*dist,10);
 
 }
