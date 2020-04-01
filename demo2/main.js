@@ -42,8 +42,6 @@ function setup(){
 
 
 
-let LightPath;
-
 function draw(){
     
 
@@ -57,24 +55,14 @@ function draw(){
 
     stroke(255,255,255);
 
-    
-
-    let p = {x:mouseX,y:mouseY};
-    getLightPath(p,Paths);
+    let point = {x:Math.min(Math.max(mouseX,1),WinSize.Width-1),y: Math.min(Math.max(mouseY,1),WinSize.Height-1)};
+    GetLightPath(point,Paths);
 
     for(let i = 0; i < 25; ++i){
         let angle = 2*Math.PI/25*i;
-        let dist = getMinDist(new Ray(p,angle,cos(angle),sin(angle)));
-        line(p.x,p.y,p.x+cos(angle)*dist,p.y-sin(angle)*dist);
+        let dist = Closest(new Ray(point,angle,cos(angle),sin(angle)));
+        line(point.x,point.y,point.x+cos(angle)*dist,point.y-sin(angle)*dist);
         fill(255,255,255);
-        circle(p.x+cos(angle)*dist,p.y-sin(angle)*dist,10);
+        circle(point.x+cos(angle)*dist,point.y-sin(angle)*dist,10);
     }
-
-    // let dx = mouseX - p.x,dy = p.y - mouseY;
-    // let angle = toRadCoord(dx,dy); 
-    // let dist = getMinDist(new Ray(p,angle,cos(angle),sin(angle)));
-    // line(p.x,p.y,p.x+cos(angle)*dist,p.y-sin(angle)*dist);
-    // fill(255,0,0);
-    // circle(p.x+cos(angle)*dist,p.y-sin(angle)*dist,10);
-
 }

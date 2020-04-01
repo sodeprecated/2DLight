@@ -1,10 +1,9 @@
 
-
 class Interval{
     constructor(_s,_f,_ref){
         this.begin = _s;
         this.end = _f;
-        this.segment = _ref;
+        this.reference = _ref;
     }
 }
 
@@ -17,7 +16,6 @@ function Median(l,pivot_fn = PickPivot){
 function QuickSelect(l,k,pivot_fn){
 
     k = Math.floor(k);
-
 
     if(l.length == 1){
         if(k != 0) throw new Error("k is out of range");
@@ -155,9 +153,6 @@ function GetAns(tree,_x){
      }
     return ans;
 }
-
-
-
 
 
 function lower_bound(array,_x){
