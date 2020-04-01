@@ -27,10 +27,8 @@ class Path{
         this.Points = [];
     }
     Draw(){
-        //fill(255,255,255);
         strokeWeight(2);
-        stroke(0,0,0);
-        //stroke(255,255,255);
+        stroke(255,255,255);
 
         let frst,prev;
         for(let i in this.Points){
