@@ -48,7 +48,7 @@ function draw(){
     
 
     clear();
-    //background(0,0,0);
+    background(255,255,255);
 
 
     for(let i in Paths){
