@@ -1,0 +1,7 @@
+body{
+    margin-top: 50px;
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
