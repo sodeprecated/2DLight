@@ -145,7 +145,7 @@ function SegmentToInterval(lightPoint,segment){
 
 Ну и собственно сам результат:
 <div style="text-align:center">
-<iframe src="https://caitan.me" width=600 height=700></iframe>
+<iframe src="https://caitan.me/demo4" width=600 height=700></iframe>
 </div>
 
 <div style="text-align:center">
