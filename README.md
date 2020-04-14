@@ -1,1 +1,1 @@
-Learn more about this project by checking my [website](https://caitan.me), or reading the [article](https://caitan.me/article)!
+See it [here](https://mrdanikus.github.io/2DLight/)!
