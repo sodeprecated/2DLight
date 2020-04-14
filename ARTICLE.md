@@ -51,7 +51,7 @@ function Dist(ray,segment){
 ***
 
 <div style="text-align:center">
-<iframe src="https://caitan.me/demo1/" width=600 height=700></iframe>
+<iframe src="https://mrdanikus.github.io/2DLight/demo1/" width=600 height=700></iframe>
 </div>
 </details>
 
@@ -65,7 +65,7 @@ function Dist(ray,segment){
 ***
 
 <div style="text-align:center">
-<iframe src="https://caitan.me/demo2/" width=600 height=700></iframe>
+<iframe src="https://mrdanikus.github.io/2DLight/demo2/" width=600 height=700></iframe>
 </div>
 
 </details>
@@ -80,7 +80,7 @@ function Dist(ray,segment){
 ***
 
 <div style="text-align:center">
-<iframe src="https://caitan.me/demo3/" width=600 height=700></iframe>
+<iframe src="https://mrdanikus.github.io/2DLight/demo3/" width=600 height=700></iframe>
 </div>
 
 </details>
@@ -172,7 +172,7 @@ function SegmentToInterval(lightPoint,segment){
 
 Ну и собственно сам результат:
 <div style="text-align:center">
-<iframe src="https://caitan.me/demo4" width=600 height=700></iframe>
+<iframe src="https://mrdanikus.github.io/2DLight/demo4/" width=600 height=700></iframe>
 </div>
 
 <div style="text-align:center">
