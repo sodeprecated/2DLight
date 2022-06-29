@@ -1,3 +1,3 @@
-See it [here](https://mrdanikus.github.io/2DLight/)!
+See it [here](https://sodeprecated.github.io/2DLight/)!
 
-[Article](https://mrdanikus.github.io/2DLight/article) with explanation(only rus).
+[Article](https://sodeprecated.github.io/2DLight/article) with explanation(only rus).
